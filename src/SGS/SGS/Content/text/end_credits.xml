@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:ns="Microsoft.Xna.Framework">
+  <Asset Type="String">
+<![CDATA[
+directed by
+Vitor Moura
+
+produced by
+Vitor Moura
+
+programming lead
+Vitor Moura    
+
+design & art
+Vitor Moura
+
+sfx & music
+Vitor Moura
+
+project manager
+Vitor Moura
+
+programming assistants
+Daniel Goulart
+Marcelo Anaissi
+
+game testers
+Daniel Goulart
+Diogo B.Rocha
+Jardson Bala
+João Miguel
+Marcelo Anaissi
+
+art assets provided by
+Kenney Group 
+opengameart.org
+
+sound assets provided by
+www.freesound.org
+
+special thanks to
+Fladiane Melo Moura
+Marta Noemi
+
+
+]]></Asset>
+</XnaContent>

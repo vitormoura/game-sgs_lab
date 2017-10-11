@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+<Asset Type="System.Collections.Generic.Dictionary[System.String, Microsoft.Xna.Framework.Rectangle]">
+<Item><Key>W</Key><Value>0 0 76 64</Value></Item>
+<Item><Key>M</Key><Value>77 0 66 64</Value></Item>
+<Item><Key>A</Key><Value>144 0 61 64</Value></Item>
+<Item><Key>V</Key><Value>0 65 61 64</Value></Item>
+<Item><Key>Q</Key><Value>62 65 60 79</Value></Item>
+<Item><Key>O</Key><Value>0 130 60 66</Value></Item>
+<Item><Key>X</Key><Value>123 65 58 64</Value></Item>
+<Item><Key>Y</Key><Value>61 145 57 64</Value></Item>
+<Item><Key>4</Key><Value>182 65 55 76</Value></Item>
+<Item><Key>D</Key><Value>123 130 54 66</Value></Item>
+<Item><Key>0</Key><Value>178 142 53 78</Value></Item>
+<Item><Key>6</Key><Value>238 0 53 77</Value></Item>
+<Item><Key>9</Key><Value>292 0 53 77</Value></Item>
+<Item><Key>K</Key><Value>238 78 53 64</Value></Item>
+<Item><Key>N</Key><Value>346 0 53 64</Value></Item>
+<Item><Key>C</Key><Value>292 78 52 66</Value></Item>
+<Item><Key>G</Key><Value>232 143 52 66</Value></Item>
+<Item><Key>T</Key><Value>400 0 52 64</Value></Item>
+<Item><Key>3</Key><Value>346 65 51 78</Value></Item>
+<Item><Key>8</Key><Value>285 145 51 78</Value></Item>
+<Item><Key>2</Key><Value>398 65 51 77</Value></Item>
+<Item><Key>7</Key><Value>337 145 51 76</Value></Item>
+<Item><Key>U</Key><Value>389 144 51 66</Value></Item>
+<Item><Key>R</Key><Value>0 197 51 65</Value></Item>
+<Item><Key>H</Key><Value>0 263 51 64</Value></Item>
+<Item><Key>5</Key><Value>52 210 50 76</Value></Item>
+<Item><Key>B</Key><Value>103 210 50 66</Value></Item>
+<Item><Key>Z</Key><Value>0 328 50 64</Value></Item>
+<Item><Key>P</Key><Value>52 287 48 65</Value></Item>
+<Item><Key>S</Key><Value>103 277 46 66</Value></Item>
+<Item><Key>E</Key><Value>154 221 45 64</Value></Item>
+<Item><Key>F</Key><Value>200 221 44 64</Value></Item>
+<Item><Key>L</Key><Value>150 286 44 64</Value></Item>
+<Item><Key>J</Key><Value>195 286 42 66</Value></Item>
+<Item><Key>1</Key><Value>245 210 37 76</Value></Item>
+<Item><Key>I</Key><Value>206 0 22 64</Value></Item>
+</Asset>
+</XnaContent>

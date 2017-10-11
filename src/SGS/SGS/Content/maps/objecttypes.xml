@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objecttypes>
+ <objecttype name="GroundEffect" color="#ab8b63">
+  <property name="damage" type="float" default="0"/>
+  <property name="life_degeneneration" type="float" default="0"/>
+  <property name="speed_modifier" type="float" default="0"/>
+ </objecttype>
+ <objecttype name="Enemy" color="#a41300">
+  <property name="class" type="string" default="Wanderer"/>
+  <property name="direction" type="int" default="0"/>
+  <property name="distance" type="float" default="0"/>
+  <property name="frequency" type="int" default="0"/>
+  <property name="speed" type="float" default="0"/>
+ </objecttype>
+ <objecttype name="Start" color="#01d3e6"/>
+ <objecttype name="Goal" color="#df8e02"/>
+</objecttypes>

@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3EBEC88D-E943-4EA7-A175-24718BFB091F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SGS</RootNamespace>
+    <AssemblyName>SGS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Components\Debug\CameraVisualDebug.cs" />
+    <Compile Include="Components\Debug\FPSCounter.cs" />
+    <Compile Include="Components\Debug\ScreenMessageLog.cs" />
+    <Compile Include="Components\Debug\VisualDebugPanel.cs" />
+    <Compile Include="Components\DrawableGameObject.cs" />
+    <Compile Include="Components\Enemies\EnemyCreationParams.cs" />
+    <Compile Include="Components\Enemies\EnemyFactory.cs" />
+    <Compile Include="Components\Extensions.cs" />
+    <Compile Include="Components\GameObject.cs" />
+    <Compile Include="Components\Input\IGameInputController.cs" />
+    <Compile Include="Components\Input\KBMousePlayerController.cs" />
+    <Compile Include="Components\Input\PauseStateGameController.cs" />
+    <Compile Include="Components\Input\NoActionGameController.cs" />
+    <Compile Include="Components\Input\TitleScreenGameController.cs" />
+    <Compile Include="Components\Players\PlayerController.cs" />
+    <Compile Include="Components\Players\PlayerMind.cs" />
+    <Compile Include="Components\Scenes\CreditsScene.cs" />
+    <Compile Include="Components\Scenes\MapBasedGameScene.cs" />
+    <Compile Include="Components\Scenes\GameSceneLayer.cs" />
+    <Compile Include="Components\Debug\IVisualDebugService.cs" />
+    <Compile Include="Components\Scenes\GameSceneRunningSession.cs" />
+    <Compile Include="Components\Debug\IMessageDebugService.cs" />
+    <Compile Include="Components\Scenes\SceneStartPanel.cs" />
+    <Compile Include="Components\UI\ClosingVignette.cs" />
+    <Compile Include="Components\UI\FancyLabel.cs" />
+    <Compile Include="Components\UI\SpeechBubble.cs" />
+    <Compile Include="Components\UI\PositionIndicator2.cs" />
+    <Compile Include="Components\UI\ScrollingLabel.cs" />
+    <Compile Include="Components\UI\SemiTransparentDarkPanel.cs" />
+    <Compile Include="Components\UI\StaticTextureFullscreenPanel.cs" />
+    <Compile Include="Components\SoundManager.cs" />
+    <Compile Include="Components\Sprites\SpriteAnimationPlayer.cs" />
+    <Compile Include="Components\Sprites\SpriteBatchLayer.cs" />
+    <Compile Include="Components\Tasks\ITask.cs" />
+    <Compile Include="Components\Cameras\DefaultGameCamera.cs" />
+    <Compile Include="Components\World\GameWorldArea.cs" />
+    <Compile Include="Components\World\GameWorld.cs" />
+    <Compile Include="Components\Input\GameInputManager.cs" />
+    <Compile Include="Components\Input\JoystickPlayerController.cs" />
+    <Compile Include="Components\Tasks\Repeat.cs" />
+    <Compile Include="Components\Sprites\SpriteAnimation.cs" />
+    <Compile Include="Components\Scenes\GameScene.cs" />
+    <Compile Include="Components\Sprites\Sprite.cs" />
+    <Compile Include="Components\Sprites\SpriteSheet.cs" />
+    <Compile Include="Components\Sprites\SpriteSheetParams.cs" />
+    <Compile Include="Components\UI\BlinkingLabel.cs" />
+    <Compile Include="Components\UI\HealthBar.cs" />
+    <Compile Include="Components\UI\Label.cs" />
+    <Compile Include="Components\UI\PositionIndicator.cs" />
+    <Compile Include="Components\Enemies\Arrow.cs" />
+    <Compile Include="Components\GameManager.cs" />
+    <Compile Include="Components\Enemies\Bomb.cs" />
+    <Compile Include="Components\Enemies\CannonEnemy.cs" />
+    <Compile Include="Components\Enemies\CannonEnemyParams.cs" />
+    <Compile Include="Components\Enemies\Enemy.cs" />
+    <Compile Include="Components\Tasks\Wait.cs" />
+    <Compile Include="Components\Sprites\Character.cs" />
+    <Compile Include="Components\Sprites\CharacterAnimations.cs" />
+    <Compile Include="Components\Sprites\CharacterSpriteSheet.cs" />
+    <Compile Include="Components\Constants.cs" />
+    <Compile Include="Components\Players\PlayerHurtEffect.cs" />
+    <Compile Include="Components\Enemies\RotatingPost.cs" />
+    <Compile Include="Components\Scenes\SceneCompletationPanel.cs" />
+    <Compile Include="Components\Players\Player.cs" />
+    <Compile Include="Components\Players\PlayerStates.cs" />
+    <Compile Include="Components\Enemies\ArcherEnemy.cs" />
+    <Compile Include="Components\Scenes\TitleScreenScene.cs" />
+    <Compile Include="Components\Enemies\WandererEnemy.cs" />
+    <Compile Include="MyGame.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Extended">
+      <HintPath>..\..\..\libs\MonoGame.Extended.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Extended.Collisions">
+      <HintPath>..\..\..\libs\MonoGame.Extended.Collisions.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Extended.Content.Pipeline">
+      <HintPath>..\..\..\libs\MonoGame.Extended.Content.Pipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Extended.Graphics">
+      <HintPath>..\..\..\libs\MonoGame.Extended.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Extended.Tiled">
+      <HintPath>..\..\..\libs\MonoGame.Extended.Tiled.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework.Net, Version=3.5.1.1679, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\libs\MonoGame.Framework.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\maps\lab_tilemap_001.png" />
+    <Content Include="Content\maps\objecttypes.xml" />
+    <Content Include="Content\maps\tileset_32x32_telles.png" />
+    <Content Include="Content\maps\tileset_64x64.png" />
+    <Content Include="Content\shaders\ClosingVignettePixelShader.fx" />
+    <Content Include="Content\sounds\credits_song.mp3" />
+    <Content Include="Content\sounds\sfx_achievement.wav" />
+    <Content Include="Content\sounds\sfx_cartoon_fall.wav" />
+    <Content Include="Content\sounds\sfx_distant_explosion.wav" />
+    <Content Include="Content\sounds\sfx_knockedout.wav" />
+    <Content Include="Content\sounds\song_advdungeon.mp3" />
+    <Content Include="Content\sounds\song_bg001.wav" />
+    <Content Include="Content\sounds\song_titlescreen.mp3" />
+    <Content Include="Content\sprites\actors.ssheet.png" />
+    <Content Include="Content\sprites\arrow.png" />
+    <Content Include="Content\sprites\blackbox.png" />
+    <Content Include="Content\sprites\bomb.png" />
+    <Content Include="Content\sprites\bomb.ss.png" />
+    <Content Include="Content\sprites\cannon.ss.png" />
+    <Content Include="Content\sprites\explosion.ss.png" />
+    <Content Include="Content\sprites\fadingEffect.png" />
+    <Content Include="Content\sprites\fancy_font.png" />
+    <Content Include="Content\sprites\fancy_font_map.xml" />
+    <Content Include="Content\sprites\g5688.png" />
+    <Content Include="Content\sprites\knight.ss.png" />
+    <Content Include="Content\sprites\mainplayer.ss-bare.png" />
+    <Content Include="Content\sprites\mainplayer.ss.png" />
+    <Content Include="Content\sprites\mouse_click.png" />
+    <Content Include="Content\sprites\mouse_position.png" />
+    <Content Include="Content\sprites\msg_001.1.png" />
+    <Content Include="Content\sprites\msg_001.2.png" />
+    <Content Include="Content\sprites\msg_001.png" />
+    <Content Include="Content\sprites\msg_002.1.png" />
+    <Content Include="Content\sprites\msg_002.2.png" />
+    <Content Include="Content\sprites\msg_002.png" />
+    <Content Include="Content\sprites\msg_003.1.png" />
+    <Content Include="Content\sprites\msg_003.2.png" />
+    <Content Include="Content\sprites\msg_003.png" />
+    <Content Include="Content\sprites\orc-bow.ss.png" />
+    <Content Include="Content\sprites\orc-spear.ss.png" />
+    <Content Include="Content\sprites\screen_getready.png" />
+    <Content Include="Content\sprites\screen_trynext.png" />
+    <Content Include="Content\sprites\skull-spear.ss.png" />
+    <Content Include="Content\sprites\spikeball.png" />
+    <Content Include="Content\text\end_credits.xml" />
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb">
+      <SubType>Designer</SubType>
+    </MonoGameContentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\fonts\credits.spritefont" />
+    <None Include="Content\fonts\credits_ending.spritefont" />
+    <None Include="Content\fonts\default.spritefont" />
+    <None Include="Content\maps\lab_map_001.tmx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\maps\lab_map_002.tmx">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Content\maps\lab_map_003.tmx" />
+    <None Include="Content\maps\lab_map_004.tmx" />
+    <None Include="Content\maps\lab_map_005.tmx" />
+    <None Include="Content\sounds\sfx_startgame.ogg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
