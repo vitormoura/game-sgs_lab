@@ -1,6 +1,6 @@
 # game-sgs_lab
 
-Laboratório de desenvolvimento de jogos utilizando Monogame e Monogame.Extended para criação de um jogo com tela de apresentação, duas fases e tela de créditos finais.
+Laboratório de desenvolvimento de jogos utilizando Monogame e Monogame.Extended para criação de um jogo completo, com tela de apresentação, duas fases e tela de créditos finais. Entre os recursos de destaque estão a utilização de mapas de tile (Utilizando Tiled Map Editor) e shaders.
 
 ## Instalação
 
